@@ -11,13 +11,13 @@ import numpy as np
 from KSVM import KSVM
 
 # Reading the dataset
-X = pd.read_csv('Xtr0.csv')['seq']#\
-#.append(pd.read_csv('Xtr1.csv')['seq'])\
-#.append(pd.read_csv('Xtr2.csv')['seq'])
+X = pd.read_csv('data/Xtr0.csv')['seq']#\
+#.append(pd.read_csv('data/Xtr1.csv')['seq'])\
+#.append(pd.read_csv('data/Xtr2.csv')['seq'])
 
-Y = pd.read_csv('Ytr0.csv')['Bound'].values#\
-#.append(pd.read_csv('Ytr1.csv')['Bound'])\
-#.append(pd.read_csv('Ytr2.csv')['Bound']).values
+Y = pd.read_csv('data/Ytr0.csv')['Bound'].values#\
+#.append(pd.read_csv('data/Ytr1.csv')['Bound'])\
+#.append(pd.read_csv('data/Ytr2.csv')['Bound']).values
 
 
 # function to convert sequence strings into k-mer words, default size = 7

@@ -9,17 +9,17 @@ import numpy as np
 
 
 # Reading the dataset
-X = pd.read_csv('Xtr0.csv')['seq']\
-.append(pd.read_csv('Xtr1.csv')['seq'])\
-.append(pd.read_csv('Xtr2.csv')['seq'])
+X = pd.read_csv('data/Xtr0.csv')['seq']\
+.append(pd.read_csv('data/Xtr1.csv')['seq'])\
+.append(pd.read_csv('data/Xtr2.csv')['seq'])
 
-Y = pd.read_csv('Ytr0.csv')['Bound']\
-.append(pd.read_csv('Ytr1.csv')['Bound'])\
-.append(pd.read_csv('Ytr2.csv')['Bound']).values
+Y = pd.read_csv('data/Ytr0.csv')['Bound']\
+.append(pd.read_csv('data/Ytr1.csv')['Bound'])\
+.append(pd.read_csv('data/Ytr2.csv')['Bound']).values
 
-X_test = pd.read_csv('Xte0.csv')['seq']\
-.append(pd.read_csv('Xte1.csv')['seq'])\
-.append(pd.read_csv('Xte2.csv')['seq'])
+X_test = pd.read_csv('data/Xte0.csv')['seq']\
+.append(pd.read_csv('data/Xte1.csv')['seq'])\
+.append(pd.read_csv('data/Xte2.csv')['seq'])
 
 
 # function to convert sequence strings into k-mer words, default size = 7
